@@ -1,0 +1,79 @@
+.header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 50px;
+
+        &__logo {
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+        
+            &-list{
+            display: flex;
+            gap: 50px;
+            list-style-type: none;
+            color: $white;
+            line-height: 18.9px;
+            
+            &__link{
+                color: $white;
+                text-decoration: none;
+                transition: all .3s ease;
+
+
+                &:hover {
+                    color: $strong-blue;
+                }
+            }
+        }
+        
+    }
+    &__button {
+        padding: 9px 15px;
+        color: $white;
+        background-color: $strong-blue;
+
+        &:hover {
+            color: $strong-blue;
+        }
+    }
+}
+
+&-screen {
+    background-image: url('img/img-style.jpg');
+    border-radius: 2%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__first {
+        display: flex;
+        justify-content: center;
+        padding-top: 136px;
+
+        &-terapy {
+            font-size: 24px;
+            color: $white;
+            padding: 0 66px 0 66px;
+        }
+    }
+}
+
+&-screen__second {
+    color: $white;
+    font-size: 64px;
+    top: 64px;
+    text-align: center;
+    font-family: 'El Messiri';
+    padding-bottom: 210px
+   }
+}
+
+
+    

@@ -1,0 +1,43 @@
+.new-format__new {
+    display: flex;
+    justify-content: center;
+
+    &-title {
+        padding: 0 45px 0 45px;
+    }
+}
+.new-format__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 134px;
+    margin-bottom: 160px;
+    
+
+    &-date {
+        font-size: 14px;
+        color: $white;
+        left: 35px;
+        bottom: 203px;
+        padding: 6px 12px 6px 12px;
+        border: solid 1px;
+        border-radius: 10%;
+        background-color: $strong-blue;
+        margin-right: 500px;
+    }
+
+    &-subtitle {
+        font-size: 24px;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+    &-text {
+        font-size: 16px;
+        color: $white;
+        font-family: 'Proxima Nova Rg';
+    }
+
+    &-__content-right {
+        width: 636px;
+    }
+}

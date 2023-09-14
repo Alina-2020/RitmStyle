@@ -1,0 +1,49 @@
+.description {
+    margin-top: 150px;
+
+    &-style {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        color: $white;
+    }
+
+    &-first {
+        padding-top: 100px;
+
+        &__style {
+            display: flex;
+            gap: 84px;
+
+            &-title {
+                font-size: 24px;
+                color: $white;
+                padding-bottom: 30px;
+                margin-top: 54px;
+
+                &__subtitle {
+                    font-size: 16px;
+                    color: $white;
+                    line-height: 22.4px;
+                }
+            }
+        }
+    }
+
+    &-second {
+        padding-top: 165px;
+        display: flex;
+        gap: 84px;
+
+        &__right-title {
+            font-size: 24px;
+            color: $white;
+            padding-bottom: 30px;
+
+            &__subtitle {
+                font-size: 16px;
+                color: $white;
+            }
+        }
+    }
+}

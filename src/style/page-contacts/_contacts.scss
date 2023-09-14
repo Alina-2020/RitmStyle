@@ -1,0 +1,39 @@
+.contacts-news {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+
+    &__title {
+        padding: 0 45px 0 45px;
+    }
+}
+.contacts-content__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 120px;
+
+    &-grid {
+        position: relative;
+    }
+    
+    &-date {
+        font-size: 14px;
+        color: $white;
+        position: absolute;
+        left: 35px;
+        bottom: 203px;
+        padding: 6px 12px 6px 12px;
+        border: solid 1px;
+        border-radius: 10%;
+        background-color: $strong-blue;
+
+        &__text {
+            font-size: 21px;
+            color: $white;
+            position: absolute;
+            left: 35px;
+            bottom: 30px;
+        }
+    }
+}

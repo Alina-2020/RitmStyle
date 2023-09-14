@@ -1,0 +1,61 @@
+.map {
+    margin-top: 150px;
+    margin-bottom: 138px;
+
+    &-wrapper {
+        display: flex;
+        gap: 48px;
+    }
+
+    &-right__f {
+        border: solid 1px;
+        border-radius: 2%;
+        background-color: $strong-blue;
+        padding: 35px 45px;
+        margin-bottom: 44px;
+
+        &-title {
+            color: $white;
+            font-size: 24px;
+        }
+    }
+
+    &-location {
+        padding: 0;
+        list-style-type: none;
+
+        &__li {
+            padding-bottom: 22px;
+
+            &-subtitle {
+                color: $white;
+                padding-left: 22px;
+                font-size: 14px;
+            }
+
+        }
+    }
+
+    &-button {
+        margin-top: 30px;
+
+        &-bt {
+            border: solid 1px;
+            background-color: $white;
+            padding: 9px 15px 9px 15px;
+            color: $strong-blue;
+        }
+    }
+
+    &-part__s {
+        border: solid 1px;
+        border-radius: 2%;
+        background-color: #018ABE;
+        padding: 35px 45px;
+
+        &-title {
+            color: #FFFFFF;
+            font-size: 24px;
+        }
+    }
+}

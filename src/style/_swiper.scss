@@ -1,0 +1,22 @@
+.swiper {
+  width: 100%;
+  height: auto;
+  
+}
+
+.swiper-pagination {
+  padding-top: 60px;
+}
+.swiper-pagination-bullet {
+ background-color: white;
+
+}
+
+.reviews-clients .swiper-slide {
+  opacity: 0.5;
+}
+
+.reviews-clients .swiper-slide-active {
+  scale: 1.2;
+  opacity: 1;
+}

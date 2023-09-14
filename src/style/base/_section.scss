@@ -1,0 +1,60 @@
+.section-style {
+    margin-top: 100px;
+    
+
+
+    &__card {
+        display: grid;
+        grid-template-columns: 416px 416px 416px;
+        grid-template-rows: 258px;
+        grid-template-areas: 
+        "area1 area2 area3"
+        " area1 area4 area5";
+        gap: 24px;
+        
+        
+
+    
+        &-style__img {
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+    &-item {
+        position: relative;
+    }
+    
+        &-item-1 {
+            grid-area: area1;
+            
+        }
+
+
+        &-item-2 {
+            grid-area: area2;
+        }
+
+
+        &-item-3 {
+            grid-area: area3;
+            
+        }
+
+        &-item-4{
+            grid-area: area4;
+        }
+
+        &-item-5 {
+            grid-area: area5;
+        }
+
+}
+    &__card-text {
+        color: $white;
+        position: absolute;
+        text-align: center;
+        bottom: 30px;
+        left: 40px;
+    }
+
+}

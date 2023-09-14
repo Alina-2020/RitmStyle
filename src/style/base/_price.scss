@@ -1,0 +1,58 @@
+.price {
+    margin-top: 150px;
+
+    &-style {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        color: $white;
+
+    }
+
+    &-session {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__smallcard {
+            margin-top: 50px;
+        }
+
+        &__name {
+            color: $white;
+            gap: 23px;
+            font-size: 18px;
+            font-family: 'Proxima Nova Rg';
+            padding-left: 20px;
+
+            &-cost {
+                font-size: 18px;
+                color: $white;
+                left: 23px;
+
+            }
+
+        }
+
+        &__smallcard-style {
+            display: flex;
+            
+
+            &__style {
+                width: 15px;
+        
+            }
+        }
+    }
+
+    &-image {
+        width: 15px;
+    }
+
+    &-style-text {
+        text-align: center;
+        color: $white;
+        font-size: 21px;
+        padding-top: 30px;
+    }
+}

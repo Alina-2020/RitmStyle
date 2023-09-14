@@ -1,0 +1,11 @@
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 31px;
+    color: $white;
+
+    &__info {
+        font-size: 14px;
+         font-family: 'Proxima Nova Rg';
+    }
+}

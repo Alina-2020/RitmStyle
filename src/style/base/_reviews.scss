@@ -1,0 +1,47 @@
+.reviews {
+
+    .reviews-section & {
+        padding: 45px 0;
+    }
+
+    &-clients .swiper-slide {
+        opacity: 0.5;
+      }
+      
+      & .swiper-slide-active {
+        scale: 1.2;
+        opacity: 1;
+      }
+    
+
+    &-style {
+        display: flex;
+        justify-content: center;
+        gap: 45px;
+        color: $white;
+    }
+        &-clients__content {
+            border: solid 1px;
+            border-radius: 5%;
+            background-color: $strong-blue;
+            padding: 40px 45px 71px 40px;
+
+            &-name {
+                font-size: 16px;
+                color: $white;
+                font-family: 'Proxima Nova Rg';
+
+                &__text {
+                    font-size: 10px;
+                    color: $white;
+                    font-family: 'Proxima Nova Rg';
+                }
+            }
+        }
+    }
+
+
+
+
+
+    
