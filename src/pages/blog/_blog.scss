@@ -15,37 +15,37 @@
     margin-bottom: 160px;
     border: solid 1px;
     padding: 50px 60px 50px 60px;
-    color: $strong-blue;
+    // color: $strong-blue;
     border-radius: 20px;
 
     &-second__date {
         font-size: 14px;
-        color: $white;
+        // color: $white;
         left: 35px;
         bottom: 203px;
         padding: 6px 12px 6px 12px;
         border: solid 1px;
         border-radius: 5px;
-        background-color: $strong-blue;
+        // background-color: $strong-blue;
         margin-right: 500px;
 
         &-subtitle {
             font-size: 24px;
-            color: $white;
+            // color: $white;
             margin-bottom: 20px;
         }
     }
     &-second__text {
         font-size: 16px;
-        color: $white;
+        // color: $white;
         font-family: 'Proxima Nova Rg';
     }
 }
 .blog-content__button {
     font-size: 14px;
-    color: $white;
+    // color: $white;
     padding: 10px 20px 10px 20px;
     border: solid 1px;
     border-radius: 5%;
-    background-color: $strong-blue;
-}
+    // background-color: $strong-blue;
+ }

@@ -2,10 +2,19 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
 const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
+let htmlPageNames = ['index.html', 'contacts.html', 'session.html', 'blog.html'];
+let multipleHtmlPlugins = htmlPageNames.map(name => {
+  return new HtmlWebpackPlugin({
+    template: `./src/${name}.html`, 
+    filename: `${name}.html`, 
+    chunks: [`${name}`] 
+})
+});
 
 module.exports = {
     mode,
@@ -16,7 +25,12 @@ module.exports = {
         open: true,
         hot: true,
     },
-    entry: path.resolve(__dirname, 'src', 'index.js'),
+    entry: {
+      index: './src/pages/index/index.js',
+      contacts: './src/pages/contacts/contacts.js',
+      blog: './src/pages/blog/blog.js',
+      session: './src/pages/session/session.js',
+  },
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
@@ -25,39 +39,30 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'src', 'index.html')
+        template:'./src/pages/index/index.html',
+        filename: 'index.html',
+        chunks: ['index']
     }),
+    new HtmlWebpackPlugin({
+      template:'./src/pages/contacts/contacts.html',
+      filename: 'contacts.html',
+      chunks: ['contacts']
+  }),
+  new HtmlWebpackPlugin({
+    template:'./src/pages/session/session.html',
+    filename: 'session.html',
+    chunks: ['session']
+}),
+new HtmlWebpackPlugin({
+  template:'./src/pages/blog/blog.html',
+  filename: 'blog.html',
+  chunks: ['blog']
+}),
          new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
          })
 ],
-
-plugins: [
-    new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, 'src', 'contacts.html')
-}),
-     new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css',
-     })
-],
-
-plugins: [
-    new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, 'src', 'session.html')
-}),
-     new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css',
-     })
-],
-plugins: [
-  new HtmlWebpackPlugin({
-  template: path.resolve(__dirname, 'src', 'blog.html')
-}),
-   new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-   })
-],
-    module: {
+  module: {
         rules: [
             {
                 test: /\.html$/i,
@@ -72,12 +77,14 @@ plugins: [
                         loader: 'postcss-loader',
                         options: {
                             postcssOptions: {
-                                plagins: [require('postcss-preset-env')],
+                                plugins: [require('postcss-preset-env')],
+                                
                             }
                         }
                      },
                      "sass-loader"
                     ],
+                    
               },
               {
                 test: /\.(ttf|otf|eot|woff|woff2)?$/i,
