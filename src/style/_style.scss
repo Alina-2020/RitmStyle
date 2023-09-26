@@ -1,7 +1,11 @@
+*{
+    box-sizing: border-box;
+    };
+
 body {
     background-color: $very-dark;
     font-family: 'Proxima Nova Rg';
-    
+    color: #FFFFFF;
 }
 
 a {
@@ -11,6 +15,7 @@ a {
 img {
     max-width: 100%;
 }
+
 
 
 

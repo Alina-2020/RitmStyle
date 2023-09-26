@@ -123,13 +123,13 @@ new HtmlWebpackPlugin({
         type: 'asset/resource',
       },
               {
-                test: /\.(?:js|mjs|cjs)$/i,
-                exclude: /node_modules/,
-                use: {
-                  loader: 'babel-loader',
-                  options: {
-                    presets: [
-                      ['@babel/preset-env', { targets: "defaults" }]
+                test: /\.(?:js|mjs|cjs)$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['@babel/preset-env', { targets: "defaults" }]
                     ]
                   }
                 }

@@ -1,4 +1,4 @@
-import '@babel/polyfill';
+import "@babel/polyfill";
 import Swiper from 'swiper';
 import {Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -30,12 +30,14 @@ const swiper = new Swiper('.swiper', {
 });
 
    
-   
+// let menuBtn = document.querySelector('.menu-mobile');
+// let menu = document.querySelector('.menu');
+// menuBtn.addEventListener('click', function(){
+// 	menuBtn.classList.toggle('active');
+	
+// })
   
 
-  
 
 
 
-
-  

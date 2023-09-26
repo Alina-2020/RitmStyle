@@ -8,44 +8,48 @@
     }
 }
 
+
 .blog-content__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin-bottom: 160px;
-    border: solid 1px;
+    border: 1px solid #018ABE;
     padding: 50px 60px 50px 60px;
-    // color: $strong-blue;
     border-radius: 20px;
 
     &-second__date {
         font-size: 14px;
-        // color: $white;
+        color: #FFFFFF;
         left: 35px;
         bottom: 203px;
         padding: 6px 12px 6px 12px;
         border: solid 1px;
         border-radius: 5px;
-        // background-color: $strong-blue;
+        background-color: #018ABE;
         margin-right: 500px;
+
 
         &-subtitle {
             font-size: 24px;
-            // color: $white;
+            color: #FFFFFF;
             margin-bottom: 20px;
         }
     }
     &-second__text {
-        font-size: 16px;
-        // color: $white;
+        font-size: 10px;
+        color: #FFFFFF;
         font-family: 'Proxima Nova Rg';
+        padding-bottom: 15px;
     }
 }
 .blog-content__button {
     font-size: 14px;
-    // color: $white;
+    color: #FFFFFF;
     padding: 10px 20px 10px 20px;
     border: solid 1px;
     border-radius: 5%;
-    // background-color: $strong-blue;
+    background-color: #018ABE;
  }
+
+ 

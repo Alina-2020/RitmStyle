@@ -47,25 +47,54 @@
     }
 }
 
-&-screen {
-    background-image: url('../img/img-style.jpg');
-    border-radius: 2%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    &__first {
-        display: flex;
-        justify-content: center;
-        padding-top: 136px;
-
-        &-terapy {
-            font-size: 24px;
-            color: $white;
-            padding: 0 66px 0 66px;
-        }
+.menu-mobile {
+    display: none;
+}
+.phone{
+    height: 30px;
+    color: white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: none;
+}
+@media(max-width: 1000px) {
+    .header-nav__logo-list {
+        display: none;
+    }
+    .menu-mobile {
+        display: inline;
     }
 }
+
+@media(max-width: 600px) {
+    .header-nav__button {
+        align-items: center;
+    }
+    .phone {
+        display: inline;
+    }
+} 
+
+// &-screen {
+//     background-image: url('../img/img-style.jpg');
+//     border-radius: 2%;
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+
+//     &__first {
+//         display: flex;
+//         justify-content: center;
+//         padding-top: 136px;
+
+//         &-terapy {
+//             font-size: 24px;
+//             color: $white;
+//             padding: 0 66px 0 66px;
+//         }
+//     }
+// }
 
 &-screen__second {
     color: $white;
