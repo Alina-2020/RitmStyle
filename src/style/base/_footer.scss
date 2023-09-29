@@ -9,3 +9,9 @@
          font-family: 'Proxima Nova Rg';
     }
 }
+
+@media(max-width: 1000px) {
+    .footer-block {
+        margin: 0 20px 0 20px;
+    }
+}

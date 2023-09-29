@@ -1,8 +1,6 @@
 .section-style {
     margin-top: 100px;
     
-
-
     &__card {
         display: grid;
         grid-template-columns: 416px 416px 416px;
@@ -12,9 +10,6 @@
         " area1 area4 area5";
         gap: 24px;
         
-        
-
-    
         &-style__img {
         background-size: cover;
         border-radius: 10px;
@@ -23,21 +18,16 @@
     &-item {
         position: relative;
     }
-    
         &-item-1 {
             grid-area: area1;
-            
         }
-
 
         &-item-2 {
             grid-area: area2;
         }
 
-
         &-item-3 {
             grid-area: area3;
-            
         }
 
         &-item-4{
@@ -57,4 +47,34 @@
         left: 40px;
     }
 
+}
+
+@media(max-width: 1000px) {
+    .section-style__card {
+        grid-template-columns: 290px 293px 293px;
+        grid-template-rows: 173px;
+        gap: 24px;
+        justify-content: center;
+
+        &-text {
+            text-align: center;
+            bottom: 16px;
+            left: 36px;
+            right: 16px;
+            font-size: 17px;
+        }
+    }
+
+}
+@media(max-width: 600px) {
+    .section-style__card {
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+
+        &-text {
+            right: 140px;
+            font-size: 14px;
+        }
+    }
 }

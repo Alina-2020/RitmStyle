@@ -25,11 +25,30 @@
             font-family: 'Proxima Nova Rg';
             padding-left: 20px;
 
-            &-cost {
+            &-cost1 {
                 font-size: 18px;
                 color: $white;
-                left: 23px;
-
+                padding-left: 150px;
+            }
+            &-cost2 {
+                font-size: 18px;
+                color: $white;
+                padding-left: 157px;
+            }
+            &-cost3 {
+                font-size: 18px;
+                color: $white;
+                padding-left: 195px;
+            }
+            &-cost4 {
+                font-size: 18px;
+                color: $white;
+                padding-left: 130px;
+            }
+            &-cost5 {
+                font-size: 18px;
+                color: $white;
+                padding-left: 155px;
             }
 
         }
@@ -54,5 +73,44 @@
         color: $white;
         font-size: 21px;
         padding-top: 30px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .price-session {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        &__smallcard  {
+            margin-top: 0;
+            margin-left: 234px;
+        }
+
+        &__name {
+            font-size: 20px;
+            
+
+            &-cost3 {
+                padding-left: 206px;
+            }
+        }
+    }
+    .img-price__style {
+        margin-left: 206px;
+    }
+}
+
+@media(max-width: 600px) {
+    .price {
+        margin-top: 80px;
+    }
+    .price-session__smallcard {
+        margin-left: 80px;
+    }
+    .img-price__style {
+        width: 418px;
+        height: 286px;
+        margin-left: 94px;
     }
 }
