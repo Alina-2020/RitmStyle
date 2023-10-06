@@ -6,6 +6,10 @@ body {
     background-color: $very-dark;
     font-family: 'Proxima Nova Rg';
     color: #FFFFFF;
+
+    &.freeze {
+        overflow: hidden;
+    }
 }
 
 a {
@@ -15,7 +19,10 @@ a {
 img {
     max-width: 100%;
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 
 

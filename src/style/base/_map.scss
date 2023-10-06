@@ -67,32 +67,41 @@
     &-title {
         display: none;
     }
+    &-left {
+        width: 856px;
+        height: 700px;
+    }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
     .map-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .map-left {
-        margin-left: 70px;
+        width: 800px;
+        height: 500px;
+       
     }
     .map-right {
         display: flex;
-        justify-content: space-around;
+        gap: 172px;
 
         &__f {
             margin-bottom: 0;
         }
     }
 }
-@media(max-width: 600px) {
+@media(max-width: 768px) {
    .map-left{
-    display: none;
+        width: 700px;
+        height: 400px;
    } 
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .map {
         margin-bottom: 0;
     }

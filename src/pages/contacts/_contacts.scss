@@ -38,7 +38,7 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
     .header-nav__logo-list {
         display: none;
         position: fixed;
@@ -54,19 +54,24 @@
     }
     .header-nav__logo-list__link {
         font-size: 28px;
-        &:not(:last-child) {
-            padding: 50px;
-           }
+    }
+    .contacts-content__item-date {
+       bottom: 120px;
     }
 }
     
 
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .header-nav__button {
         display: none;
     }
-    .header-phone {
-        display: inline;
-    }
-} 
+
+ .contacts-content__item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+}

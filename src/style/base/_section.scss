@@ -49,7 +49,7 @@
 
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1200px) {
     .section-style__card {
         grid-template-columns: 290px 293px 293px;
         grid-template-rows: 173px;
@@ -66,15 +66,11 @@
     }
 
 }
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .section-style__card {
         display: flex;
         flex-direction: column;
-        margin-left: 80px;
-
-        &-text {
-            right: 140px;
-            font-size: 14px;
-        }
+        justify-content: center;
+        align-items: center;
     }
 }

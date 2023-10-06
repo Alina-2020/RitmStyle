@@ -42,7 +42,7 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
     .header-nav__logo-list {
         display: none;
         position: fixed;
@@ -62,11 +62,38 @@
             padding: 50px;
            }
     }
+    .new-format__content {
+        gap: 0;
+
+        &-subtitle {
+            font-size: 18px;
+        }
+        &-text {
+            font-size: 12px; 
+        }
+    }
 }
-    
+
+@media(max-width: 768px) {
+    .new-format__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &-date {
+            margin-right: 600px;
+        }
+    }
+}
+@media(max-width: 576px) {
+    .new-format__content-date {
+        display: none;
+    }
+}
 
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .header-nav__button {
         display: none;
     }

@@ -22,7 +22,9 @@
             line-height: 18.9px;
 
             &.active {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
             }
             
@@ -92,7 +94,7 @@
    }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
     .header-nav__logo-list {
         display: none;
         position: fixed;
@@ -126,11 +128,14 @@
     
 
 
-@media(max-width: 600px) {
+@media(max-width: 992px) {
     .header-nav__button {
         display: none;
     }
-    .header-phone {
-        display: inline;
-    }
 } 
+
+// @media(max-width: 756px) {
+//     .header-nav__button {
+//         background-image: url('../');
+//     }
+// }
