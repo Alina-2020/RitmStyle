@@ -22,7 +22,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin-bottom: 160px;
-    border: 1px solid #018ABE;
+    border: 1px #018ABE;
     padding: 50px 60px 50px 60px;
     border-radius: 20px;
 
@@ -82,13 +82,8 @@
            }
     }
 }
-    
 
-
-@media(max-width: 768px) {
-    .header-nav__button {
-        display: none;
-    }
+@media(max-width: 992px) {
     .blog-content__card {
         margin-bottom: 80px;
     }

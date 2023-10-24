@@ -19,7 +19,6 @@
     
     &-date {
         font-size: 14px;
-        // color: $white;
         position: absolute;
         left: 35px;
         bottom: 203px;
@@ -30,7 +29,6 @@
 
         &__text {
             font-size: 21px;
-            // color: $white;
             position: absolute;
             left: 35px;
             bottom: 30px;
@@ -58,20 +56,40 @@
     .contacts-content__item-date {
        bottom: 120px;
     }
+    .contacts-content__item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+        gap: 24px;
+        margin-bottom: 120px;
+    }
 }
-    
+@media(max-width: 1024px) {
+    .contacts-content__item  {
+        margin-left: 60px;
 
+        &-date {
+            bottom: 200px;
+           }
+    }
+}   
 
 @media(max-width: 768px) {
-    .header-nav__button {
-        display: none;
-    }
+    .contacts-content__item  {
+        margin-left: 8px;
 
- .contacts-content__item{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
-    gap: 24px;
-    margin-bottom: 120px;
-}
-}
+        &-date {
+            bottom: 150px;
+           }
+    }
+}   
+@media(max-width: 576px) {
+    .contacts-content__item-date {
+        font-size: 10px;
+        bottom: 112px;
+
+        &__text {
+            font-size: 16px;
+        }
+    }   
+}   

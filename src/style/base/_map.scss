@@ -94,25 +94,29 @@
         }
     }
 }
-@media(max-width: 768px) {
-   .map-left{
-        width: 700px;
-        height: 400px;
-   } 
-}
+
 
 @media(max-width: 768px) {
     .map {
         margin-bottom: 0;
     }
+    .map-left {
+        width: 700px;
+        height: 400px;
+    } 
+    
     .map-right {
         display: flex;
         flex-direction: column;
         gap: 25px;
-        
+        margin-left: 40px;
     }
 }
-@media(max-width: 600px) {
+@media(max-width: 576px) {
+    .map-left {
+        width: 550px;
+        height: 400px;
+    } 
     .map-title {
         display: inline;
         display: flex;

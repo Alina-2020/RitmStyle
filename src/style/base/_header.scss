@@ -32,12 +32,6 @@
                 color: $white;
                 text-decoration: none;
                 transition: all .3s ease;
-
-
-                &:hover {
-                    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-                    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-                }
             }
         }
         
@@ -83,15 +77,6 @@
     font-family: 'El Messiri';
     padding-bottom: 210px
    }
-
-   &-phone {
-    height: 30px;
-    color: white;
-    background-color: white;
-    border-radius: 5px;
-    padding: 3px 5px;
-    display: none;
-   }
 }
 
 @media(max-width: 1024px) {
@@ -107,6 +92,7 @@
         padding: 230px;
         background-color: #43435f;
         text-align: center;
+        z-index: 1;
     }
     .header-nav__logo-list__link {
         font-size: 28px;
@@ -125,17 +111,31 @@
         font-size: 24px;
     }
 }
-    
+   
+
+@media(max-width: 1024px) {
+    .header-nav__button {
+        display: none;
+    }
+}
 
 
 @media(max-width: 992px) {
     .header-nav__button {
-        display: none;
+        display: inline;
+        border-radius: 5px;
+        background-image: url('../img/phone-solid.svg');
+        background-size: 58%;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+        background-color: #fff;
+        width: 45px;
+        height: 45px;
+
+        &:hover {
+            display: none;
+        }
     }
 } 
 
-// @media(max-width: 756px) {
-//     .header-nav__button {
-//         background-image: url('../');
-//     }
-// }

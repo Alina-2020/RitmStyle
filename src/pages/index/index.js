@@ -24,31 +24,38 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
        
         320: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 30,
             slideToClickedSlide: true,
+            centeredSlides: false,
         },
         
-        480: {
-            sslidesPerView: 2,
-            spaceBetween: 30,
-            slideToClickedSlide: true,
-        },
+        // 480: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20,
+        //     slideToClickedSlide: true,
+        //     centeredSlides: false,
+        // },
         
         640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 10,
             slideToClickedSlide: true,
+            centeredSlides: true,
+            centeredSlides: false,
           },
+
           768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
             slideToClickedSlide: true,
+            centeredSlides: true,
           },
         1024: {
             slidesPerView: 3,
             spaceBetween: 20,
             slideToClickedSlide: true,
+            centeredSlides: true,
         },
 
     },
@@ -71,6 +78,15 @@ menuBtn.addEventListener('click', function(){
 })
   
 
+const link = document.querySelector('.header-nav__logo-list');
+link.addEventListener('mouseover', function(event){
+    let target = event.target.closest('span');
+    if(!target) return;
+    target.style.cssText = ` background-color: rgb(32, 178, 170);`;
+});
 
-
-
+link.addEventListener('mouseout', function(event){
+    let target = event.target.closest('span');
+    if(!target) return;
+    target.style.cssText = ``;
+})
